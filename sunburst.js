@@ -1,5 +1,7 @@
-var width = screen.width/2,
-    height = screen.width/2,
+var chartSize = Math.min(screen.width, screen.height)/2;
+
+var width = chartSize,
+    height = chartSize,
     radius = Math.min(width, height) / 2;
 
 var x = d3.scale.linear()
