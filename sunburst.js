@@ -1,4 +1,4 @@
-var chartSize = Math.min(screen.width, screen.height)/2;
+var chartSize = Math.min(screen.width, screen.height)/1.75;
 
 var width = chartSize,
     height = chartSize,

@@ -865,3 +865,20 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+div#sunburst {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 10px;
+  position: relative;
+}
+
+form#sunburst {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+path#sunburst {
+  stroke: #fff;
+  fill-rule: evenodd;
+}
