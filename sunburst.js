@@ -1,5 +1,5 @@
-var width = screen.width-20,
-    height = screen.height-20,
+var width = screen.width/2,
+    height = screen.width/2,
     radius = Math.min(width, height) / 2;
 
 var x = d3.scale.linear()
