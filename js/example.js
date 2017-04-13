@@ -1,15 +1,17 @@
+var chartRadius = Math.min(screen.width, screen.height)/2;
+
 var chart = circularHeatChart()
-    .segmentHeight(40)
-    .innerRadius(20)
+    .segmentHeight(chartRadius/5)
+    .innerRadius(chartRadius/5)
     .numSegments(12)
     .radialLabels(null)
-    .segmentLabels(null)
+    .segmentLabels(["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"])
     .margin({top: 20, right: 20, bottom: 20, left: 20});
 
 
 /* An array of objects */
 data = [];
-for(var i=0; i<60; i++) {
+for(var i=0; i<48; i++) {
     data[i] = {title: "Segment "+i, value: Math.round(Math.random()*100)};
 }
 
