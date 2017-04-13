@@ -873,6 +873,8 @@ body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
 
+/* Sunburst syling */
+
 div#sunburst {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 10px;
@@ -888,4 +890,73 @@ form#sunburst {
 path#sunburst {
   stroke: #fff;
   fill-rule: evenodd;
+}
+
+
+/* Radius heat map styling */
+svg#radiusheatmap {
+	width: 960px;
+	height: 300px;
+}
+#energychart svg#radiusheatmap, #chart3 svg#radiusheatmap {
+	height: 360px;
+}
+#chart4 svg#radiusheatmap {
+	height: 480px;
+	width: 960px;
+}
+path#radiusheatmap {
+	stroke: #777;
+	stroke-width: 0.1px;
+}
+
+.labels#radiusheatmap {
+	fill: #aaa;
+	font-weight: 200;
+	letter-spacing: -1px;
+}
+.labels.segment#radiusheatmap {
+	font-size: 10px;
+}
+
+#chart3 .labels#radiusheatmap {
+	fill: #555;
+}
+
+body#radiusheatmap {
+	width: 960px;
+	margin: 0 auto;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+section#radiusheatmap {
+	margin-bottom: 40px;
+}
+h1#radiusheatmap {
+	font-size: 40px;
+	font-weight: 300;
+	letter-spacing: -2px;
+	margin: 1em 0 0.5em 0;
+}
+h2#radiusheatmap {
+	font-weight: 300;
+}
+a#radiusheatmap {
+	color: #0088cc;
+	text-decoration: none;
+}
+a:hover#radiusheatmap {
+	color: #005580;
+	text-decoration: underline;
+}
+#info#radiusheatmap {
+	height: 20px;
+}
+
+footer#radiusheatmap {
+	margin: 50px 0 30px 0;
+}
+footer p#radiusheatmap {
+	font-size: 11px;
 }
