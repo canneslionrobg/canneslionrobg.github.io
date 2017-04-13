@@ -9,7 +9,7 @@ description: "Application for one of the iCrossing places to the 2017 Cannes Lio
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Test Person
   pic: 1
   position: Lead Designer
   social:
