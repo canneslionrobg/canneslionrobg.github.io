@@ -894,19 +894,54 @@ path#sunburst {
 
 
 /* Radius heat map styling */
-div#circularHeatChart {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 10px;
-  position: relative;
+body#circularHeatChart {
+	width: 960px;
+	margin: 0 auto;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+section#circularHeatChart {
+	margin-bottom: 40px;
+}
+h1#circularHeatChart {
+	font-size: 40px;
+	font-weight: 300;
+	letter-spacing: -2px;
+	margin: 1em 0 0.5em 0;
+}
+h2#circularHeatChart {
+	font-weight: 300;
+}
+#circularHeatChart a {
+	color: #0088cc;
+	text-decoration: none;
+}
+#circularHeatChart a:hover {
+	color: #005580;
+	text-decoration: underline;
+}
+#info #circularHeatChart {
+	height: 20px;
 }
 
-form#circularHeatChart {
-  position: absolute;
-  right: 10px;
-  top: 10px;
+footer#circularHeatChart {
+	margin: 50px 0 30px 0;
+}
+footer p#circularHeatChart {
+	font-size: 11px;
 }
 
 path#circularHeatChart {
-  stroke: #fff;
-  fill-rule: evenodd;
+	stroke: #777;
+	stroke-width: 0.1px;
+}
+
+#circularHeatChart .labels {
+	fill: #aaa;
+	font-weight: 200;
+	letter-spacing: -1px;
+}
+#circularHeatChart .labels.segment {
+	font-size: 10px;
 }
