@@ -15,17 +15,17 @@ var chart = circularHeatChart()
 //     data[i] = {title: "Segment "+i, value: Math.round(Math.random()*100)};
 // }
 
-d3.json("seasonaldata.json", function(data) {
-  var stats =[data];
-  console.log(stats[0]);
-});
+var data; // a global
+d3.json("seasonaldata.json", function(error, json) {
+  if (error) return console.warn(error);
+  data = json;
 
 chart.accessor(function(d) {return d.value;})
     .radialLabels(null)
     .segmentLabels(null);
 d3.select('#circularHeatChart')
     .selectAll('svg')
-    .data([stats])
+    .data([data])
     .enter()
     .append('svg')
     .call(chart);
