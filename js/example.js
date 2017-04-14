@@ -10,17 +10,21 @@ var chart = circularHeatChart()
 
 
 /* An array of objects */
-data = [];
-for(var i=0; i<48; i++) {
-    data[i] = {title: "Segment "+i, value: Math.round(Math.random()*100)};
-}
+// data = [];
+// for(var i=0; i<48; i++) {
+//     data[i] = {title: "Segment "+i, value: Math.round(Math.random()*100)};
+// }
+
+d3.json("seasonaldata.json", function(data) {
+  var chartData = data;
+});
 
 chart.accessor(function(d) {return d.value;})
     .radialLabels(null)
     .segmentLabels(null);
 d3.select('#circularHeatChart')
     .selectAll('svg')
-    .data([data])
+    .data([chartData])
     .enter()
     .append('svg')
     .call(chart);

@@ -921,7 +921,7 @@ h2#circularHeatChart {
 	color: #005580;
 	text-decoration: underline;
 }
-#info #circularHeatChart {
+#circularHeatChartInfo {
 	height: 20px;
 }
 
