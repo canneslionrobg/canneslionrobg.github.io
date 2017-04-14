@@ -18,7 +18,7 @@ for(var i=0; i<48; i++) {
 chart.accessor(function(d) {return d.value;})
     .radialLabels(null)
     .segmentLabels(null);
-d3.select('#chart4')
+d3.select('#circularHeatChart')
     .selectAll('svg')
     .data([data])
     .enter()
@@ -26,10 +26,10 @@ d3.select('#chart4')
     .call(chart);
 
 /* Add a mouseover event */
-d3.selectAll("#chart4 path").on('mouseover', function() {
+d3.selectAll("#circularHeatChart path").on('mouseover', function() {
 	var d = d3.select(this).data()[0];
     d3.select("#info").text(d.title + ' has value ' + d.value);
 });
-d3.selectAll("#chart4 svg").on('mouseout', function() {
+d3.selectAll("#circularHeatChart svg").on('mouseout', function() {
     d3.select("#info").text('');
 });
