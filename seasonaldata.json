@@ -1,3 +1,4 @@
+data = [
 {"title": "April 2013", "value": 14800},
 {"title": "May 2013", "value": 22200},
 {"title": "June 2013", "value": 22200},
@@ -46,3 +47,4 @@
 {"title": "January 2017", "value": 18100},
 {"title": "February 2017", "value": 18100},
 {"title": "March 2017", "value": 27100}
+];
