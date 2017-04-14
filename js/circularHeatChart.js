@@ -11,7 +11,7 @@ function circularHeatChart() {
     function chart(selection) {
         selection.each(function(data) {
             var svg = d3.select(this);
-            var chartSize = Math.min(screen.width, screen.height)/1.5;
+            var chartSize = Math.min(screen.width, screen.height)/2+40;
             svg.attr("width", chartSize)
                .attr("height", chartSize);
 
