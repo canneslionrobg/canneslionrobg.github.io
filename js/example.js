@@ -1,4 +1,4 @@
-var chartRadius = Math.min(screen.width, screen.height)/2;
+var chartRadius = Math.min(screen.width, screen.height)/4;
 
 var chart = circularHeatChart()
     .segmentHeight(chartRadius/5)
