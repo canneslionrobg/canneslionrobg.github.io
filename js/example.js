@@ -20,7 +20,7 @@ d3.json("seasonaldata.json", function(error, json) {
   if (error) return console.warn(error);
   console.log(json[0]);
   for(var i in json) {
-      data[i] = i;
+      data[i] = {i};
   }
 });
 
