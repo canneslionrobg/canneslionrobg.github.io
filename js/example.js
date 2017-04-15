@@ -19,7 +19,7 @@ var data; // a global
 d3.json("seasonaldata.json", function(error, json) {
   if (error) return console.warn(error);
   data = json;
-//  console.log(data[0]);
+  console.log(data[0]);
 });
 
 chart.accessor(function(d) {return d.value;})
@@ -27,7 +27,7 @@ chart.accessor(function(d) {return d.value;})
     .segmentLabels(null);
 d3.select('#circularHeatChart')
     .selectAll('svg')
-    .data([data])
+    .data(data)
     .enter()
     .append('svg')
     .call(chart);
