@@ -27,7 +27,7 @@ chart.accessor(function(d) {return d.value;})
     .segmentLabels(null);
 d3.select('#circularHeatChart')
     .selectAll('svg')
-    .data([data])
+    .data(data)
     .enter()
     .append('svg')
     .call(chart);
