@@ -19,7 +19,7 @@ var data; // a global
 d3.json("seasonaldata.json", function(error, json) {
   if (error) return console.warn(error);
   data = json;
-  console.log(data[0]);
+//  console.log(data[0]);
 });
 
 chart.accessor(function(d) {return d.value;})
