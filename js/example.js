@@ -10,20 +10,16 @@ var chart = circularHeatChart()
 
 
 /* An array of objects */
-data2 = [];
+data = [];
 for(var i=0; i<48; i++) {
-    data2[i] = {title: "Segment "+i, value: Math.round(Math.random()*100)};
+    data[i] = {title: "Segment "+i, value: Math.round(Math.random()*100)};
 }
-console.log(data2);
-console.log(data2[0]);
-
-var data =[]; // a global
-d3.json("seasonaldata.json", function(error, json) {
-  if (error) return console.warn(error);
-  data = json;
-  console.log(data);
-  console.log(data[0]);
-});
+//
+// var data =[]; // a global
+// d3.json("seasonaldata.json", function(error, json) {
+//   if (error) return console.warn(error);
+//   data = json;
+// });
 
 chart.accessor(function(d) {return d.value;})
     .radialLabels(null)
