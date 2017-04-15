@@ -19,7 +19,6 @@ var data =[]; // a global
 d3.json("seasonaldata.json", function(error, json) {
   if (error) return console.warn(error);
   data = json;
-});
 
 chart.accessor(function(d) {return d.value;})
     .radialLabels(null)
@@ -30,6 +29,8 @@ d3.select('#circularHeatChart')
     .enter()
     .append('svg')
     .call(chart);
+
+});
 
 /* Add a mouseover event */
 d3.selectAll("#circularHeatChart path").on('mouseover', function() {
