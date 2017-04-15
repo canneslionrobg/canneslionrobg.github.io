@@ -18,10 +18,8 @@ var chart = circularHeatChart()
 var data =[]; // a global
 d3.json("seasonaldata.json", function(error, json) {
   if (error) return console.warn(error);
-  console.log(json[0]);
-  for(var i in json) {
-      data[i] = {i};
-  }
+  data = json;
+  console.log(data[0]);
 });
 
 chart.accessor(function(d) {return d.value;})
