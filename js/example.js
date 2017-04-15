@@ -10,11 +10,11 @@ var chart = circularHeatChart()
 
 
 /* An array of objects */
-data = [];
+data2 = [];
 for(var i=0; i<48; i++) {
-    data[i] = {title: "Segment "+i, value: Math.round(Math.random()*100)};
+    data2[i] = {title: "Segment "+i, value: Math.round(Math.random()*100)};
 }
-console.log(data);
+console.log(data2);
 
 var data =[]; // a global
 d3.json("seasonaldata.json", function(error, json) {
