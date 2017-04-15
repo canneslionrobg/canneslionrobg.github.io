@@ -18,7 +18,7 @@ var chart = circularHeatChart()
 var data; // a global
 d3.json("seasonaldata.json", function(error, json) {
   if (error) return console.warn(error);
-  data = json;
+  data = json.months;
   console.log(data[0]);
 });
 
