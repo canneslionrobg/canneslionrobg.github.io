@@ -4,7 +4,7 @@ function circularHeatChart() {
     numSegments = 12,
     segmentHeight = 20,
     domain = null,
-    range = ["white", "red"],
+    range = ["blue", "red"],
     accessor = function(d) {return d;},
     radialLabels = segmentLabels = [];
 
@@ -15,7 +15,6 @@ function circularHeatChart() {
             svg.attr("width", chartSize)
                .attr("height", chartSize);
 
-               console.log("CHC Data: " + data);
             var offset = innerRadius + Math.ceil(data.length / numSegments) * segmentHeight;
             g = svg.append("g")
                 .classed("circular-heat", true)
