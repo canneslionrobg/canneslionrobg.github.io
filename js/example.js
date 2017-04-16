@@ -21,7 +21,7 @@ d3.json("seasonaldata.json", function(error, json) {
   data = json;
 
 chart.accessor(function(d) {return d.value;})
-    .radialLabels(null)
+    .radialLabels(["2013","2014","2015","2016"])
     .segmentLabels(null);
 d3.select('#circularHeatChart')
     .selectAll('svg')
