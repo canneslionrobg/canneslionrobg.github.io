@@ -30,8 +30,6 @@ d3.select('#circularHeatChart')
     .append('svg')
     .call(chart);
 
-});
-
 /* Add a mouseover event */
 d3.selectAll("#circularHeatChart path").on('mouseover', function() {
 	var d = d3.select(this).data()[0];
@@ -39,4 +37,6 @@ d3.selectAll("#circularHeatChart path").on('mouseover', function() {
 });
 d3.selectAll("#circularHeatChart svg").on('mouseout', function() {
     d3.select("#circularHeatChartInfo").text('');
+});
+
 });
