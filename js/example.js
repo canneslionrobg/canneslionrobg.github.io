@@ -4,7 +4,7 @@ var chart = circularHeatChart()
     .segmentHeight(chartRadius/5)
     .innerRadius(chartRadius/5)
     .numSegments(12)
-    .radialLabels(null)
+    .radialLabels(["2013","2014","2015","2016"])
     .segmentLabels(["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"])
     .margin({top: 20, right: 20, bottom: 20, left: 20});
 
