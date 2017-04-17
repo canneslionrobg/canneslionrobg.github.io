@@ -488,6 +488,68 @@
                     </div>
                 </div>
             </div>
+            <!-- FlexSlider pieces -->
+            <link rel="stylesheet" href="default-five-slides.css" type="text/css" />
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+            <script src="jquery.flexslider-min.js"></script>
+
+            <script src="css3-mediaqueries.js"></script>
+
+            <!-- Kwiks pieces -->
+            <script src="kwiks.js"></script>
+
+            <!-- Includes for this demo -->
+            <link rel="stylesheet" href="demo-stuff/demo.css" type="text/css" media="screen" />
+
+            <!-- Hook up the FlexSlider -->
+            <script type="text/javascript">
+              var Main = Main || {};
+
+              jQuery(window).load(function() {
+                window.responsiveFlag = jQuery('#responsiveFlag').css('display');
+                Main.gallery = new Gallery();
+
+                jQuery(window).resize(function() {
+                  Main.gallery.update();
+                });
+              });
+
+              function Gallery(){
+                var self = this,
+                  container = jQuery('.flexslider'),
+                  clone = container.clone( false );
+
+                this.init = function (){
+                  if( responsiveFlag == 'block' ){
+                    var slides = container.find('.slides');
+
+                    slides.kwicks({
+                      max : 500,
+                      spacing : 0
+                    }).find('li > a').click(function (){
+                      return false;
+                    });
+                  } else {
+                    container.flexslider();
+                  }
+                }
+                this.update = function () {
+                  var currentState = jQuery('#responsiveFlag').css('display');
+
+                  if(responsiveFlag != currentState) {
+
+                    responsiveFlag = currentState;
+                    container.replaceWith(clone);
+                    container = clone;
+                    clone = container.clone( false );
+
+                    this.init();
+                  }
+                }
+
+                this.init();
+              }
+            </script>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
