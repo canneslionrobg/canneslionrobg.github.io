@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Rokkitt);
+@import url(https://fonts.googleapis.com/css?family=Rokkitt);
 /*
  * jQuery FlexSlider v1.8
  * http://www.woothemes.com/flexslider/
@@ -86,7 +86,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 		overflow:hidden;
 		position:relative;
 		margin-right: -.25em;
-		
+
 		/*for 5 slides*/
 		width:20.08%;
 	}
@@ -97,6 +97,41 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 	.flex-caption {
 		width:440px;
 		padding:20px 30px;
-	}	
+	}
 	#responsiveFlag{display:block;}
+}
+
+.close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    opacity: .3;
+}
+
+.close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #222;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #222;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
