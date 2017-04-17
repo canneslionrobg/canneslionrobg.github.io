@@ -35,6 +35,11 @@
 	 color: #333;
  }
 
+ .modal-body {
+    position: relative;
+    padding: 20px;
+}
+
  hr {
     margin-top: 21px;
     margin-bottom: 21px;
@@ -48,6 +53,13 @@
 		-webkit-margin-after: 0.5em;
 		-webkit-margin-start: auto;
 		-webkit-margin-end: auto;
+}
+
+.col-lg-8 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Browser Resets */
