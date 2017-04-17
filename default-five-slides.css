@@ -135,3 +135,11 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 3em;
+		text-transform: uppercase;
+		font-family: {{ site.data.template.font.primary }};
+		font-weight: 700;
+}
