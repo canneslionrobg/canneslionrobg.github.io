@@ -18,7 +18,6 @@ table {border-collapse: collapse; border-spacing: 0;}
 strong {font-weight: bold;}
 em {font-style: italic;}
 
-body {background: url(body.jpg) repeat left top; font-family: 'Georgia', 'Arial', sans-serif;}
 #container {width: 80%; max-width: 800px; margin: 0 auto;}
 
 h2 {padding: 20px 0 30px; font-size: 18px; line-height: 22px; font-style: italic;}
