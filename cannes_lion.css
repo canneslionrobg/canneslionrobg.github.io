@@ -118,6 +118,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 	#responsiveFlag{display:block;}
 }
 
+#container {width: 80%; max-width: 800px; margin: 0 auto;}
+
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
