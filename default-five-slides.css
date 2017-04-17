@@ -8,6 +8,23 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
+ body {
+     overflow-x: hidden;
+     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+     color: #{{ site.data.template.color.secondary-dark }};
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     text-transform: uppercase;
+     font-family: {{ site.data.template.font.primary }};
+     font-weight: 700;
+ }
+
 /* Browser Resets */
 .flex-container a,
 .flexslider a,
