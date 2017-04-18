@@ -14,6 +14,10 @@ body {
     color: #{{ site.data.template.color.muted }};
 }
 
+.text-muted .section-subheading {
+  color: #fec503;
+}
+
 .text-primary {
     color: #{{ site.data.template.color.primary }};
 }
