@@ -14,7 +14,7 @@ body {
     color: #{{ site.data.template.color.muted }};
 }
 
-.text-muted .section-subheading {
+.text-gold {
   color: #fec503;
 }
 
