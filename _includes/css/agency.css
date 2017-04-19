@@ -946,11 +946,11 @@ path#circularHeatChart {
 }
 
 #circularHeatChart .labels {
-	fill: #fff;
+	fill: #595959;
 	font-weight: 400;
 	letter-spacing: -1px;
 }
 #circularHeatChart .labels.segment {
 	font-size: 20px;
-  fill: #aaa;
+  fill: #595959;
 }
