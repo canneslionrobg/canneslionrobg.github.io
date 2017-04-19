@@ -4,7 +4,7 @@ function circularHeatChart() {
     numSegments = 12,
     segmentHeight = 20,
     domain = null,
-    range = ["yellow", "red"],
+    range = ["whitesmoke", "red"],
     accessor = function(d) {return d;},
     radialLabels = segmentLabels = [];
 
