@@ -10,6 +10,11 @@ body {
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
+
+ul#bullet-list {
+  text-align: left;
+}
+
 .text-muted {
     color: #{{ site.data.template.color.muted }};
 }
@@ -954,8 +959,4 @@ path#circularHeatChart {
 #circularHeatChart .labels.segment {
 	font-size: 20px;
   fill: #595959;
-}
-
-#bullet-list ul {
-  text-align: left;
 }
