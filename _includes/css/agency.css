@@ -12,7 +12,7 @@ body {
 
 
 ul#bullet-list {
-  text-align: left;
+  text-align: "left";
 }
 
 .text-muted {
