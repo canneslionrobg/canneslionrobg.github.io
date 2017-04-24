@@ -956,6 +956,6 @@ path#circularHeatChart {
   fill: #595959;
 }
 
-ul#bullet-list {
+#bullet-list ul {
   text-align: left;
 }
