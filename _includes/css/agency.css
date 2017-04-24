@@ -955,3 +955,7 @@ path#circularHeatChart {
 	font-size: 20px;
   fill: #595959;
 }
+
+li#bullet-list {
+  text-align: left;
+}
