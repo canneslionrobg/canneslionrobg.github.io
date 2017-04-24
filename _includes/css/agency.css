@@ -930,7 +930,8 @@ h2#circularHeatChart {
 	text-decoration: underline;
 }
 #circularHeatChartInfo {
-	height: 20px;
+  height: 30px;
+  margin-top: 5px;
 }
 
 footer#circularHeatChart {
