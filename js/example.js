@@ -5,7 +5,7 @@ var chart = circularHeatChart()
     .innerRadius(chartRadius/5)
     .numSegments(12)
     .radialLabels(["2013","2014","2015","2016"])
-    .segmentLabels(["January","February","March","April","May","June","July","August","September","October","November","December"])
+    .segmentLabels(["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"])
     .margin({top: 20, right: 20, bottom: 20, left: 20});
 
 
@@ -22,7 +22,7 @@ d3.json("seasonaldata.json", function(error, json) {
 
 chart.accessor(function(d) {return d.value;})
     .radialLabels(["2013","2014","2015","2016"])
-    .segmentLabels(["January","February","March","April","May","June","July","August","September","October","November","December"]);
+    .segmentLabels(["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]);
 d3.select('#circularHeatChart')
     .selectAll('svg')
     .data([data])
