@@ -957,6 +957,5 @@ path#circularHeatChart {
 	letter-spacing: -1px;
 }
 #circularHeatChart .labels.segment {
-	font-size: 20px;
   fill: #595959;
 }
