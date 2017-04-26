@@ -103,11 +103,11 @@ function arcTweenZoom(d) {
   };
 }
 
-/* Add a mouseover event */
-d3.selectAll("#sunburst path").on('mouseover', function() {
-	var d = d3.select(this).data()[0];
-    d3.select("#sunburstChartInfo").text((d.children ? d : d.parent).name + ' has value ' + d.size);
-});
-d3.selectAll("#sunburst svg").on('mouseout', function() {
-    d3.select("#sunburstChartInfo").text('');
-});
+function mouseover(d) {
+
+  var name = d.name;
+  var size = d.size;
+
+  d3.select("#sunburstChartInfo")
+      .text(name + ": " + size);
+}
