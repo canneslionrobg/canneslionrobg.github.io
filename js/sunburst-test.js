@@ -159,9 +159,9 @@
     function breadcrumbPoints(d, i) {
       var points = [];
       points.push("0,0");
-      points.push(b.w*2.67 + ",0");
-      points.push(b.w*2.67 + b.t + "," + (b.h / 2));
-      points.push(b.w*2.67 + "," + b.h);
+      points.push(b.w*2.6 + ",0");
+      points.push(b.w*2.6 + b.t + "," + (b.h / 2));
+      points.push(b.w*2.6 + "," + b.h);
       points.push("0," + b.h);
       if (i > 0) { // Leftmost breadcrumb; don't include 6th vertex.
         points.push(b.t + "," + (b.h / 2));
@@ -185,7 +185,7 @@
           .style("fill", function(d) { return colors((d.children ? d : d.parent).name); });
 
       entering.append("svg:text")
-          .attr("x", (b.w*2.67 + b.t) / 2)
+          .attr("x", (b.w*2.6 + b.t) / 2)
           .attr("y", b.h / 2)
           .attr("dy", "0.35em")
           .attr("text-anchor", "middle")
@@ -193,7 +193,7 @@
 
       // Set position for entering and updating nodes.
       g.attr("transform", function(d, i) {
-        return "translate(" + i * (b.w*2.67 + b.s) + ", 0)";
+        return "translate(" + i * (b.w*2.6 + b.s) + ", 0)";
       });
 
       // Remove exiting nodes.
@@ -201,7 +201,7 @@
 
       // Now move and update the percentage at the end.
       d3.select("#trail").select("#endlabel")
-          .attr("x", (nodeArray.length + 0.5) * (b.w*2.67 + b.s))
+          .attr("x", (nodeArray.length + 0.5) * (b.w*2.6 + b.s))
           .attr("y", b.h / 2)
           .attr("dy", "0.35em")
           .attr("text-anchor", "middle")

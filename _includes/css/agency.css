@@ -995,8 +995,9 @@ body#sunburst-test {
 }
 
 #sunburst-test #sequence text, #sunburst-test #legend text {
-  font-weight: 200;
+  font-weight: 400;
   fill: #fff;
+  font-size: 10px;
 }
 
 #sunburst-test #chart {
