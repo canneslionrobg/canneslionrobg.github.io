@@ -102,3 +102,12 @@ function arcTweenZoom(d) {
         : function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); return arc(d); };
   };
 }
+
+/* Add a mouseover event */
+d3.selectAll("#sunburstChartInfo path").on('mouseover', function() {
+	var d = d3.select(this).data()[0];
+    d3.select("#sunburstChartInfo").text(d.title + ' has value ' + d.value);
+});
+d3.selectAll("#sunburstChartInfo svg").on('mouseout', function() {
+    d3.select("#sunburstChartInfo").text('');
+});
