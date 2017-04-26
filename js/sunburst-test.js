@@ -10,7 +10,7 @@
     };
 
     // Mapping of step names to colors.
-    var colors = d3.scale.category20c();
+    var color = d3.scale.category20c();
 
     // Total size of all segments; we set this later, after loading the data.
     var totalSize = 0;
@@ -66,7 +66,7 @@
           .attr("display", function(d) { return d.depth ? null : "none"; })
           .attr("d", arc)
           .attr("fill-rule", "evenodd")
-          .style("fill", function(d) { return colors[d.name]; })
+          .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
           .style("opacity", 1)
           .on("mouseover", mouseover);
 
