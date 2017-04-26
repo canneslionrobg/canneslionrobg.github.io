@@ -1,4 +1,4 @@
-var chartSize = Math.min(screen.width, screen.height)/1.25;
+var chartSize = Math.min(screen.width, screen.height)/1.5;
 
 var width = chartSize,
     height = chartSize,
@@ -31,7 +31,7 @@ var arc = d3.svg.arc()
 // Keep track of the node that is currently being displayed as the root.
 var node;
 
-d3.json("flare.json", function(error, root) {
+d3.json("adwords.json", function(error, root) {
   node = root;
   var path = svg.datum(root).selectAll("path")
       .data(partition.nodes)
@@ -101,4 +101,13 @@ function arcTweenZoom(d) {
         ? function(t) { return arc(d); }
         : function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); return arc(d); };
   };
+}
+
+function mouseover(d) {
+
+  var name = d.name;
+  var size = d.size;
+
+  d3.select("#sunburstChartInfo")
+      .text(name + ": " + size);
 }
