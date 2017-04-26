@@ -201,7 +201,7 @@
 
       // Now move and update the percentage at the end.
       d3.select("#trail").select("#endlabel")
-          .attr("x", (nodeArray.length + 0.5) * (b.w*2.6 + b.s))
+          .attr("x", (nodeArray.length + 0.1) * (b.w*2.6 + b.s))
           .attr("y", b.h / 2)
           .attr("dy", "0.35em")
           .attr("text-anchor", "middle")
