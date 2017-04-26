@@ -104,7 +104,7 @@ function arcTweenZoom(d) {
 }
 
 /* Add a mouseover event */
-d3.selectAll("#sunburst").on('mouseover', function() {
+d3.selectAll("#sunburst path").on('mouseover', function() {
 	var d = d3.select(this).data()[0];
     d3.select("#sunburstChartInfo").text((d.children ? d : d.parent).name + ' has value ' + d.size);
 });
