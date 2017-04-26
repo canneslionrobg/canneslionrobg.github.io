@@ -1,7 +1,7 @@
   var chartSize = Math.min(screen.width, screen.height)/1.5;
 
     var width = chartSize,
-        height = chartSize,
+        height = chartSize;
     var radius = Math.min(width, height) / 2;
 
     // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
