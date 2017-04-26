@@ -181,8 +181,9 @@
       var entering = g.enter().append("svg:g");
 
       entering.append("svg:polygon")
+          .attr("width", width/6)
           .attr("points", breadcrumbPoints)
-          .style("fill", function(d) { return colors[d.name]; });
+          .style("fill", function(d) { return colors((d.children ? d : d.parent).name); });
 
       entering.append("svg:text")
           .attr("x", (b.w + b.t) / 2)
