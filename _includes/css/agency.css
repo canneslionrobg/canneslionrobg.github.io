@@ -967,7 +967,7 @@ path#circularHeatChart {
 
 body#sunburst-test {
   font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
+  font-size: 0.5em;
   font-weight: 400;
   background-color: #fff;
   width: 960px;
@@ -995,7 +995,7 @@ body#sunburst-test {
 }
 
 #sunburst-test #sequence text, #sunburst-test #legend text {
-  font-weight: 600;
+  font-weight: 400;
   fill: #fff;
 }
 
