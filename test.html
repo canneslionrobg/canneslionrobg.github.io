@@ -626,13 +626,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <hr class="star-primary">
                             <!-- Start of chart -->
                             <meta charset="utf-8">
-                            <form>
-                              <label><input type="radio" name="mode" value="size"> Clicks</label>
-                              <label><input type="radio" name="mode" value="count" checked> Keywords</label>
-                            </form>
-                            <div id="sunburst"></div>
-                            <div id="sunburstChartInfo"></div>
-                            <script src="js/sunburst-test.js"></script>
+                            <div id="sunburst-test">
+                            <div id="main">
+                              <div id="sequence"></div>
+                              <div id="chart">
+                                <div id="explanation" style="visibility: hidden;">
+                                  <span id="percentage"></span><br/>
+                                  of clicks come through this entity.
+                                </div>
+                              </div>
+                            </div>
+                            <div id="sidebar">
+                              <input type="checkbox" id="togglelegend"> Legend<br/>
+                              <div id="legend" style="visibility: hidden;"></div>
+                            </div>
+                            </div>
+                            <script type="text/javascript" src="js/sunburst-test.js"></script>
                             <!-- End of chart -->
                             <p>Sunburst diagrams are ideal for displaying hierarchical data, this makes them a great way to visualise an AdWords account. The above chart has been created in javascript using the D3 package and is interactive, whereby selecting a node will allow you to focus in on that particular entity.</p>
                             <p>In the above example, each ring corresponds to a level in the account hierarchy, with the central root representing each campaign within the account. Outside of this you then have the ad groups and finally each keyword.</p>
