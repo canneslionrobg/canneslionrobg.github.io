@@ -37,6 +37,7 @@
     d3.text("account.csv", function(text) {
       var csv = d3.csv.parseRows(text);
       var json = buildHierarchy(csv);
+      Console.lof(json);
       createVisualization(json);
     });
 
